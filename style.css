@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: blue;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 850px;
+    height: 88%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    color: 000;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.container_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .btn {
+    border: none;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    outline: none;
+    font-size: 0.9rem;
+    background-color: #cb3050;
+    border-radius: 4px;
+    color: #fff;
+    font-family: inherit;
+}
+
+.container .btn:focus {
+    transform: scale(0.98);
+    outline: none;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.hide_num {
+    text-align: center;
+    font-size: 3rem;
+    background-color: #cb3050;
+    border-radius: 4px;
+    width: 25%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.message {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.number_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.number_data input {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+}
+
+.number_data button {
+    margin-top: 0.5rem;
+    display: block;
+}
+
+.content {
+    font-size: 1.2rem;
+}
+
+/* Base styles */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .footer-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #cb3050;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.footer .footer-button:hover {
+    background-color: #a12345;
+}
+
+.footer .footer-text {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Styles for score and high score */
+.score-box {
+    font-size: 1.5rem;
+    background-color: #cb3050;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    display: inline-block;
+}
+
+.text-box {
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .footer {
+        padding: 0.5rem;
+    }
+
+    .footer .footer-button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .footer .footer-text {
+        font-size: 0.9rem;
+    }
+
+    .score-box {
+        font-size: 1.2rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .text-box {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .footer {
+        padding: 0.5rem;
+    }
+
+    .footer .footer-button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .footer .footer-text {
+        font-size: 0.9rem;
+    }
+
+    .score-box {
+        font-size: 1.2rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .text-box {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+}
